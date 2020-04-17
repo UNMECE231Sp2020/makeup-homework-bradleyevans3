@@ -9,5 +9,17 @@ void swap(int *x, int *y)
 
 void bubbleSort(int *begin, const int *end)
 {
-	//Use swap to exchange two values
+	// Use swap to exchange two values
+        // swap(int *begin, int *end)
+
+	int *i, *j;
+	for(i=begin; i!=end; i++) {
+		for(j=i+1; j!=end; j++) {
+			if(*j > *(j+1)) {
+				swap(j, j+1);
+			}
+		}
+	}
 }
+
+
